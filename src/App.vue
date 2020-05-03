@@ -12,7 +12,7 @@
 </template>
 
 <script>
-    import TheSidebar from '@/components/TheSidebar';
+    import TheSidebar from '@/components/Sidebar/TheSidebar';
     import Map from '@/components/Map';
 
     export default {
@@ -37,7 +37,5 @@
     .content {
         flex-grow: 1;
         flex-shrink: 1;
-        padding: 15px;
-        width: calc(100% - 30px);
     }
 </style>
