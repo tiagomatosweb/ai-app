@@ -3,21 +3,25 @@
         id="app"
         class="wrap"
     >
-        <div class="sidebar">
-            <div class="sidebar-wrap">
-                sd
-            </div>
-        </div>
+        <TheSidebar />
 
         <div class="content">
-            sdsd
+            <Map />
         </div>
     </div>
 </template>
 
 <script>
+    import TheSidebar from '@/components/TheSidebar';
+    import Map from '@/components/Map';
+
     export default {
         name: 'App',
+
+        components: {
+            Map,
+            TheSidebar,
+        },
     };
 </script>
 
@@ -28,14 +32,6 @@
     .wrap {
         display: flex;
         height: 100vh;
-    }
-
-    .sidebar {
-        background-color: #eee;
-        flex-grow: 0;
-        flex-shrink: 0;
-        padding: 15px;
-        width: 250px;
     }
 
     .content {
