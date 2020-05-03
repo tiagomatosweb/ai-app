@@ -3,8 +3,8 @@
         <MglMap
             :access-token="accessToken"
             :map-style="mapStyle"
-            :center="coordinates"
-            :zoom="15"
+            :center="initialCoordinates"
+            :zoom="initialZoom"
         >
             <MglNavigationControl position="top-right" />
             <MglGeolocateControl position="top-right" />
@@ -37,9 +37,10 @@
         data() {
             return {
                 mapbox: null,
-                accessToken: 'pk.eyJ1IjoidGlhZ29tYXRvc3dlYiIsImEiOiJjazlxamlkbWwwa2FkM2xxeGp0djg0Zm1yIn0.1v-bGcpSRdb-Teqb-ioLTw',
-                mapStyle: 'mapbox://styles/mapbox/outdoors-v11',
-                coordinates: [151.2093, -33.8688],
+                accessToken: process.env.VUE_APP_MAPBOX_API_KEY,
+                mapStyle: process.env.VUE_APP_MAPBOX_MAP_STYLE,
+                initialCoordinates: [151.2093, -33.8688],
+                initialZoom: 15,
                 geoJsonSource: {
                     type: 'geojson',
                     data: null,

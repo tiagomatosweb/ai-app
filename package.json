@@ -14,6 +14,7 @@
         "bootstrap": "^4.4.1",
         "bootstrap-vue": "^2.13.0",
         "core-js": "^3.6.5",
+        "dotenv": "^8.2.0",
         "mapbox-gl": "^1.10.0",
         "vue": "^2.6.10",
         "vue-mapbox": "^0.4.1",
