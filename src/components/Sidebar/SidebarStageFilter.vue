@@ -1,8 +1,8 @@
 <template>
     <div class="mb-3">
-        <label for="type">Type</label>
+        <label for="stage">Stage</label>
         <BFormSelect
-            id="type"
+            id="stage"
             v-model="selected"
             :options="options"
         />
